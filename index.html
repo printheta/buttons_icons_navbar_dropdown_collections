@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Buttons, Icons, Navbar, Dropdown, Collections</title>
+</head>
+<body>
+    <!-- Dropdown - Albums -->
+    <ul id="albums" class="dropdown-content">
+        <li><a href="#!" class="teal-text">The Dream Chapter:STAR</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="teal-text">The Dream Chapter:MAGIC</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="teal-text">The Dream Chapter:ETERNITY</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="teal-text">The Chaos Chapter:FREEZE</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="teal-text">The Dream Chapter:FIGHT OR ESCAPE</a></li>
+    </ul>
+    <nav class="teal accent-3">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">TOMORROW X TOGETHER</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">Members</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a href="#!" class="dropdown-trigger" data-target="albums">Albums<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <p>TOMORROW X TOGETHER are five buys who came under one dream to build a better tomorrow</p>
+        <h1 class="teal-text">Members</h1>
+        <div class="btn-large teal accent-3 white-text waves-effect waves-light">SOOBIN</div>
+        <div class="btn-large teal accent-3 white-text waves-effect waves-light">YEONJUN</div>
+        <div class="btn-large teal accent-3 white-text waves-effect waves-light">BEOMGYU</div>
+        <div class="btn-large teal accent-3 white-text waves-effect waves-light">TAEHYUN</div>
+        <div class="btn-large teal accent-3 white-text waves-effect waves-light">HUENING KAI</div>
+        <h1 class="teal-text">Albums</h1>
+        <div class="btn-large blue lighten-3 white-text waves-effect waves-light">
+            <i class="material-icons left">star</i>
+            The Dream Chapter: STAR</div>
+        <div class="btn-large green accent-3 white-text waves-effect waves-light">
+            <i class="material-icons left">cloud</i>
+            The Dream Chapter: MAGIC</div>
+        <div class="btn-large deep-purple accent-2 white-text waves-effect waves-light">
+            <i class="material-icons left">access_time</i>
+            The Dream Chapter: ETERNITY</div>
+        <br><br>
+        <div class="btn-large blue darken-4 white-text waves-effect waves-light">
+            <i class="material-icons left">whatshot</i>
+            The Chaos Chapter: FREEZE</div>
+        <div class="btn-large pink accent-2 white-text waves-effect waves-light">
+            <i class="material-icons left">transfer_within_a_station</i>
+            The Chaos Chapter: FIGHT OR ESCAPE</div>
+        <br><br>
+        <div class="btn-large disabled">Sweat (Official Audio)</div>
+    </div>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown();
+        });
+    </script>
+</body>
+</html>
